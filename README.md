@@ -1,9 +1,9 @@
 ## AsyncRAT Salt
 
 I've reviewed approximately 10-20 files and have only encountered **two instances** of salts for AsyncRAT.
-- bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941 (Format: Hex)
+1. bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941 (Format: Hex)
 > The same salt that is referenced in the AsyncRAT source code available on Github (Last commit: May 10, 2020) , is also utilized in Quasar RAT 1.3, as indicated in the [QuasarRAT-Analysis](https://github.com/JPCERTCC/QuasarRAT-Analysis/blob/main/quasarrat_decode.py) from December 1, 2020.
-- DcRatByqwqdanchun (Format: UTF8)
+2. DcRatByqwqdanchun (Format: UTF8)
 
 ### Salt 1 - bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941 
 
