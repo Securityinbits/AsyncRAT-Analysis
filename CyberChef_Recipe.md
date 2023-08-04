@@ -235,6 +235,8 @@ Find_/_Replace({'option':'Regex','string':'$'},'\\nAES_KEY = "$R2"',false,false,
 #### b6dbbded2ca82116c6da9bae34cfa6e9 (2022-04-27)
 - Use this Salt DcRatByqwqdanchun (Format: UTF8)
 - Key is the variable name for AES key, input Key in Filter operation
+
+#### Input
 ```
 // Token: 0x04000001 RID: 1
 		public static string Por_ts = "SCPH5d+ou7xeC99DTH6uTxbQq5wVkaq/EP2UlwCnUB8EUVvGZeZ8Dd8eLC+C1MitBV9w22rCJknmSG3qTOLhYA==";
