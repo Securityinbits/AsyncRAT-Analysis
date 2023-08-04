@@ -33,7 +33,11 @@ Merge(true)
 Find_/_Replace({'option':'Regex','string':'$'},'\\nAES_KEY = "$R2"',false,false,false,true)
 ```
 
-### Example
+### Examples
+- 37e965330586a51125db2a420917db17 (2023-07-24)
+- a4c35dcd0013a04666a9d58095ff4060 (2023-07-27)
+- dea3149aae31bd4116adba54840af10f (2022-05-03)
+- b6dbbded2ca82116c6da9bae34cfa6e9 (2022-04-27)
 
 #### 37e965330586a51125db2a420917db17 (2023-07-24)
 - Use this Salt DcRatByqwqdanchun (Format: UTF8)
