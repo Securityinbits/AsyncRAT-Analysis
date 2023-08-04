@@ -4,7 +4,9 @@
 - Input code
 - Salt
 - Variable name that stores the AES key
-  
+
+
+Note: This recipe was initially developed by Srujan Kumar. I have made few modifications to support the new AsyncRAT files.  
 ```
 Regular_expression('User defined','public static string \\w+\\s+\\=[ "0-9a-zA-Z+/=]{12,}',true,true,false,false,false,false,'List matches')
 Find_/_Replace({'option':'Simple string','string':'public static string '},'',true,false,true,false)
@@ -32,6 +34,136 @@ Find_/_Replace({'option':'Regex','string':'$'},'\\nAES_KEY = "$R2"',false,false,
 ```
 
 ### Example
+
+#### 37e965330586a51125db2a420917db17 (2023-07-24)
+- Use this Salt DcRatByqwqdanchun (Format: UTF8)
+- Key is the variable name for AES key, input Key in Filter operation
+
+#### Input
+```
+		// Token: 0x04000001 RID: 1
+		public static string Por_ts = "LTT1S8GeyTjgJgNjfacJIH2MnnHdxcwd33rcE3PwHYDkBbkVhTFhlBhSXEcNmcSB+78/aiOCdZcNSaMr27IoOA==";
+
+		// Token: 0x04000002 RID: 2
+		public static string Hos_ts = "BNJiYrBPfDDgdZHUm4VSGV5DWUYjBYsOaucXpFN38659q4LRDwyn14rbYeMpRJDUo79mCbgVHd0cjy2mt1hYun3vx2rfBtQirBKVWeTE1w8=";
+
+		// Token: 0x04000003 RID: 3
+		public static string Ver_sion = "GlnZAyDnOneWXgD8uAuMas0thjeZIeDicM5c3uspHIaZx3eAOboPbQRwiqN/56VAR0UM1ubEdnHJidyEIkaqbQ==";
+
+		// Token: 0x04000004 RID: 4
+		public static string In_stall = "HM4W+lkN5UFJosQVJZufHDIa7M76vawe/otXnRXEhiQiEBZhW+fpUK4Bj8X1GjXsVkt61ZSPBj5o5PBe8gko5A==";
+
+		// Token: 0x04000005 RID: 5
+		public static string Install_Folder = "%AppData%";
+
+		// Token: 0x04000006 RID: 6
+		public static string Install_File = "SecurityHealthSystray.exe";
+
+		// Token: 0x04000007 RID: 7
+		public static string Key = "RmVMOVdKREkxaGF4ZjR1ek9MVmJpZkpiTm1xYWsxOWo=";
+
+		// Token: 0x04000008 RID: 8
+		public static string MTX = "31Kl8sNyigmXdB8ijKal8I2AkDlv8doKPUvPer6zqhj6Xd7iwGjiedheTu/yWncGq7pbWrGdTunOc6Qr1JbuxA==";
+
+		// Token: 0x04000009 RID: 9
+		public static string Certifi_cate = "np2sOxb7GoEJprq21AJwcoDbr9Ys8lViT19ZPB2UZYl8F2KoYpuqO54Zpy0nPuETuE9g42ePiWOEMe7NoiHp43bMa6p0u+29+ZJtp3cba+iuAKuYUETOCvZvM7yMjfmrp9g+uaas9Z+2Y1Qm7ua9S5mc8jHsvdGC+pwImZ30Sfk+diYaggdxUPdllv8c+2QaYEkhIIg5oNUsZj8gMJL9W8ALQeNNtGJJ0WmIt5xM37XRpzzFeyiHxeNv4ASz+GTUhgFSc0fdIU32DYetpewldrCAaD0K6Vkbe0dUztw6c79vwrOCUkk0fYOEqV6klJ6itqZySyVIcY853hdA2tXkOHygMALRN2Ow60MHtCS5ihyM9co8qFt2DTPDOS9wlKbQFAI5lYjPJzbdYqmNNqp54WTRgPR1pO2UiyantgYz43+7zsPyGRVLXiD5lf+Gdaq/q33I2I8ZxTIVNdPhr8RQsyD6RwPzqf62+fVhW5v1pZS+qBygnfLYZbsUfz2MF/ogzCunNCoKLsLFt0KhsqAbhbbaKQVM1cdY4iCiqdepvY9hDhMB4Scf8twZr3ad6xVJokET2i1AGq3xLI4JFkhTb5IYAhPQt5maugBMVP4NeQCmXLX3D72ZgpNOuAYebTgxvP3ker62vUAnUM7w+o4zE4/XA1auVPtBearJYtoFqehPv242EhaNo0otD1YrlBi9WyJWw83WsYkEbhtc+XNKRKEYlzYer1wYIPesKsi5lxqc7HcY23BX/yp+pF8g52O0GB8I090cqbDvcJOs6zppyNDbhOMgZgdv30QRhIalHAJ/LsAPXhDaWinGlo1hwS4fAtxQDgyEx7UJ84C6tm6LGyYsVxjsA13+hEb6axo0jq8ULiJdkAzGI6qEmWQnLICO0DqLArLgX57w3JZ2wEXoowhYP5NWH8im7eMRPh66K0zDZPvmRYhaMjamGDT5POUGclXzc4BLBQVb3VGwfUc7ykIl77LdKAR9jkrluDNlsL0Nmmv+oFguPl63T/wpJ47cmXMD7xwBcXzQpsy28qxbT/KGlI/ebjYQsIUT6QAuQkReN5Dmr21Xqfxl+n4XRpm1";
+
+		// Token: 0x0400000A RID: 10
+		public static string Server_signa_ture = "Q3ChaTA0NoS0M8pKuWJikoVgI9YkgUpccchJ8wBarLIuiGgLN+qwvxTKkh+YQ7CxUVOazTp1Isuc3wIYULO1zS/n9J0JTTbz8JfS6QCM5uiMQoLVB+bYmE9Wla7IWvLDIxhiEmdxtupzf+Nk+gJosHy21Ze51qaCSOLDFDZrmacYAXauztRz3chk3VKt/5NHTlskvoXr9uRgxnPlvt6YfqBijchS6JIvxoOzpzng4NoeEgWOXoVhxLDps5+TZx6/fNaPYneB5tsmp3HuumLCpUAAR6W8fHRXNQM4bPsX6wY=";
+
+		// Token: 0x0400000B RID: 11
+		public static X509Certificate2 Server_Certificate;
+
+		// Token: 0x0400000C RID: 12
+		public static Aes256 aes256;
+
+		// Token: 0x0400000D RID: 13
+		public static string Paste_bin = "0gGNlo/SybYe7aTDClNf/gW8/XXXUK+2Zylwdqka9/KvbwSM4z7MPH3KHuk1kv1XP4IcwkaBnJMf8B0mzY9yMQ==";
+
+		// Token: 0x0400000E RID: 14
+		public static string BS_OD = "KgRgLnCvHs1Cimzi+tzCuy9zJZVkbxKbfTTGOnbzuPh5ZdEKhmw1Q/tXo+ux/5vgYNL4/Zc36fSl64VH2fplBA==";
+
+		// Token: 0x0400000F RID: 15
+		public static string Hw_id = null;
+
+		// Token: 0x04000010 RID: 16
+		public static string De_lay = "1";
+
+		// Token: 0x04000011 RID: 17
+		public static string Group = "bcpQwvyGNRMEmIX5/wk9qOiw3WVY0hI7aGm3VwkFNzkierktzm57ZEKHImMs2mVPfU1uC8lvXtITjEjNCDYKOQ==";
+
+		// Token: 0x04000012 RID: 18
+		public static string Anti_Process = "wZpgPkDC8xv2VmF1EZNMKH5qR+6QUlRhgH13s6S4x+Krcy0eKN3//iA37dDh6ZmlNtIqLRM7460fS/TGco7Geg==";
+
+		// Token: 0x04000013 RID: 19
+		public static string An_ti = "Z/xff63xw+qSqLbHZbXHwJdspKzZkMIi6SDCHGc6K5FYpsCnzxQfDOYQDdyzzEEoh6GbnER9utqhEE9xhOiQ8w==";
+	}
+}
+```
+#### a4c35dcd0013a04666a9d58095ff4060 (2023-07-27)
+- Use this Salt bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941 (Format: HEX)
+- BtVxclpKzUIPm is the variable name for AES key, input BtVxclpKzUIPm in Filter operation
+
+#### Input
+```
+		// Token: 0x04000001 RID: 1
+		public static string ZCsfrdBXawOiKZjQ = "uGWsi5C5XyombAUnK/58YvWrjp23a06kT6XOWb0gUxNXV9N9UCGQS5k9cj2UmrUlpm/SwW4Uv8H07+hfcaoKIQ==";
+
+		// Token: 0x04000002 RID: 2
+		public static string khHsDnDPLhT = "HHCN59yVrresXUDrVXEm7V3SemVYfi9KhdGeR3oU/1s+Z37FCUTUpwj3qCrA3Acv2lKLILrIjThNJAOUMas92KbH+TUE78hqcxC5l8aY2OM=";
+
+		// Token: 0x04000003 RID: 3
+		public static string GUhTnJxSMIVx = "oLMmJ++KbTiC3AgMUzpeFtBNf1sBosWTDhV5dkpPRkezL4B4MQYjNBguAb31uLO2++Im64tTfpHD1ChPkDS1Xw==";
+
+		// Token: 0x04000004 RID: 4
+		public static string abaRzTmEIcRq = "/K70z0vi249e8pRlyMS3gIbtNK/kHehTlQ1DYH+73i0Hw7ZKDHugQczIRQwNZPeD0ei8ZPJ8p00WBRGGniYd5w==";
+
+		// Token: 0x04000005 RID: 5
+		public static string jVqunoxWlrfX = "%AppData%";
+
+		// Token: 0x04000006 RID: 6
+		public static string hMAdUsycUJqDP = "svchost.exe";
+
+		// Token: 0x04000007 RID: 7
+		public static string BtVxclpKzUIPm = "WXozbld0QldOeDJOSkxJNlQ1NHlLSmhVMjk0VU11TDg=";
+
+		// Token: 0x04000008 RID: 8
+		public static string FBmIjeHOhdn = "yiqJRr41qvnm+r0GJqCaQ0e+HiHqGBrn1kPtIDM8jludPPiNGsfj7SL694K7sEwHo4+F6HXwbpC7aXBUllKCarLaWKANwslR2JplQDMqJTZDR4s+TluHU2mmfacySB2Y";
+
+		// Token: 0x04000009 RID: 9
+		public static string leIjltOegYswWI = "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";
+
+		// Token: 0x0400000A RID: 10
+		public static string dfEWWMyctWxuO = "nUakg0qW+hjCKJbV4eBs0AdSTtsR2JSlA0haMPqRro+iEv/i+jjkbx7iXx4TEte202lagATuKYWDq2kyt03Evj3ABkGhprZqiXTDK5Ds2Wxb1R4dLshxSNUCkOyKFnLmZF4dfUkjc3YLIQRe8EkCWVs8fNt/Vdz1RqfwRHGrZ+SCyodmtIHl/VKO6ZYNWb3puVGTkq//O1EhszS6rIsm/dytZEu7H6RwE59eQhphJUFRDUaHJivygjizsl2brTHtl0nNSos32Cge4w3HPI7QxM6C+g2vLQIhVbI2ikGZWlooW2rRqXKXjwFqvUTiP8ZNiT+Ejs+e8UmgdLufvIhV5ixOhSdDly3Ro4nZKFAEz2uGOiD9mM/GQiOgsluPCM0kRXNlNrUW/RtNzROLbPnedn6U+o9KpW4i75S6f7TK+qeRyNZ8KXanVxg+OwoMhKKyqaeMZR1vWkA3f/X8X83v/c4FZc9oLf0MOxSRhFUyEm8xEpCECX5aGpZ2LiAZgFxcT7IgoaPlNJXcOumchqcseX9cDwFS9MjLVSf4Ev7cfVcBGb8JIfztoxom6wBEv7HsEk28vfZIgvnOEDBcc8ij4w3aNDhKWAKCEIYfioUOqDzxmeMbpXlAKkI2DMBdUlmuj1AxgKVls7DPLcbDw54WofkDr2u/w6DdFwL4CEkbdSQDisJcuoH4mfzHRuTjaKMyY6/bICQJ9oB6kT2xi0U+lVNYMDYOKMS06IIaMmYLsnFC++PAMEewOM7amTA0eA1ExGdMJTVEeA4f8niH+OvOxDwedP9dgAOTRMBcx4FXQAZHHsEuVyAG/cys/uf4PRFgGRokiAFFhtjZglJoopjb1IZC/LUj/oolOTSstsmW3qJxFAcFQ1ET7JZG9VMx6mwmItP4EMzXfV5aZ0+SpOdG8+O5sjtNQng9OZeMFvIzb1Gx5AAVFjSsGHgbQacyNJxW1D80oRPmJKZNCl6orC1j5A==";
+
+		// Token: 0x0400000B RID: 11
+		public static X509Certificate2 EcOrbeZcWWUyN;
+
+		// Token: 0x0400000C RID: 12
+		public static string NhVRdkwYZXFaf = "+E5CbU5p1/RuPK9h3rwCZti32Dsb2JS0xBScHjBUqol6WqNRnUw3MOXspuspaCtxy5UQhtkKsYqaA9FweMijHg==";
+
+		// Token: 0x0400000D RID: 13
+		public static YswClXovphLiWkj xyPKHnJWUgr;
+
+		// Token: 0x0400000E RID: 14
+		public static string dtlyuyeoFVHC = "Ix5X0OVR6DliFWz2LOLcibUbLe5ZS0XnpI23B4pI/lB8VdIcLfwJgQMaouYRwEiLZN2rUHRTXBcLYQQQj7WJ8g==";
+
+		// Token: 0x0400000F RID: 15
+		public static string dRNyhEyybjurEh = "1GIlCh3IfiYUPPztnI4uHCfhSD0ZeRQmFgYBrKARHbeVuPuLneRmUinGWPBfJ8PI+bIVGCFiNh0vKLlrn+zZhw==";
+
+		// Token: 0x04000010 RID: 16
+		public static string LmrpkpGfwSyrl = null;
+
+		// Token: 0x04000011 RID: 17
+		public static string DJkpwYlopASZZj = "3";
+
+		// Token: 0x04000012 RID: 18
+		public static string GOzvSejWYCsbX = "PRXX7VBGQDprHNh6BJ15picsLRPfZvYpX+nKeNeozUWuCiBdIF6eCBedidGY22mJutd/5CR9q3gytH3GAY+PFQ==";
+	}
+}
+
+```
+
 #### dea3149aae31bd4116adba54840af10f (2022-05-03)
 - Use this Salt bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941 (Format: HEX)
 - Key is the variable name for AES key, input Key in Filter operation 
