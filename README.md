@@ -1,5 +1,7 @@
 ## AsyncRAT Analysis
 
+Read this article on my webiste for more details, [AsyncRAT: Config Decryption Techniques and Salt Analysis](https://www.securityinbits.com/malware-analysis/asyncrat-config-decryption-techniques-and-salt-analysis/)
+
 ### AES Salt
 I've reviewed approximately 10-20 files and have only encountered **two instances** of salts for AsyncRAT.
 1. bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941 (Format: HEX)
